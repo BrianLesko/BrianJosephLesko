@@ -13,11 +13,13 @@ st.header('Brian Joseph Lesko')
 
 st.info('Robotics Engineer with an interest in AI, Data Science, and Real Estate')
 
-icon_size = 20
-
-#st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
-#st_button('youtube', 'https://youtube.com/codingprofessor', 'Coding Professor YouTube channel', icon_size)
-st_button('twitter', 'https://twitter.com/BrianJosephLeko', 'Follow me on Twitter', icon_size)
-st_button('linkedin', 'https://www.linkedin.com/in/brianlesko/', 'Follow me on LinkedIn', icon_size)
-st_button('github', 'https://github.com/BrianLesko', 'Follow me on Github', icon_size)
-st_button('cup', 'https://www.buymeacoffee.com/brianlesko', 'Buy me a Coffee', icon_size)
+col1, col2, col3 = st.columns(3)
+with col2:
+    display = Image.open('dp.png')
+    icon_size = 20
+    #st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
+    #st_button('youtube', 'https://youtube.com/codingprofessor', 'Coding Professor YouTube channel', icon_size)
+    st_button('twitter', 'https://twitter.com/BrianJosephLeko', 'Follow me on Twitter', icon_size, type="primary")
+    st_button('linkedin', 'https://www.linkedin.com/in/brianlesko/', 'Follow me on LinkedIn', icon_size, type="primary")
+    st_button('github', 'https://github.com/BrianLesko', 'Follow me on Github', icon_size, type="primary")
+    st_button('cup', 'https://www.buymeacoffee.com/brianlesko', 'Buy me a Coffee', icon_size, type="primary")
